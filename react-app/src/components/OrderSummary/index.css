@@ -1,0 +1,209 @@
+.order-details__container {
+  margin: 1rem;
+}
+
+.order-details__container>div {
+  display: flex;
+  width: 100%;
+}
+
+.order-details__left {
+  margin-left: 2rem;
+}
+
+.order-details__left>div:first-child {
+  display: flex;
+}
+
+.order-details__left>div:first-child>h2:last-child {
+  margin-left: 2rem;
+}
+
+.order-details__left>div>h2 {
+  margin: 0;
+}
+
+.order-details__right {
+  margin-left: 15rem;
+  border-left: 0.1rem solid gray;
+  padding-left: 10rem;
+  width: 100%;
+}
+
+.order-item__container {
+  width: 50rem;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.1rem solid gray;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.order-item__container:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.order-item__container> :nth-child(1) {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.order-item__container> :nth-child(1)>div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 50;
+}
+
+.order-item__delete-btn {
+  font-size: 1.4rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.order-item__delete-btn:hover {
+  background-color: rgb(185, 185, 185);
+}
+
+.delivered-item__qty {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: -2.55rem;
+  margin-right: 3rem;
+}
+
+.missing-shipping-info {
+  margin: 0;
+  color: red;
+}
+
+.order-item__container> :nth-child(1)>div>div:first-child {
+  align-self: flex-end;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.order-item__container> :nth-child(1)>div>div:last-child {
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 15rem;
+  height: 3rem;
+}
+
+.order-item__container img {
+  width: 10rem;
+}
+
+.order-item__item-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.order-item__item-description {
+  font-style: italic;
+}
+
+.order-details__right>h2 {
+  font-size: 3rem;
+}
+
+.order-details__shipping-info>div>h3 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.order-details__shipping-info>div {
+  font-size: 1.4rem;
+  display: flex;
+}
+
+.edit-shipping-details {
+  display: flex;
+}
+
+.edit-shipping-details>div {
+  margin-left: 3rem;
+}
+
+.shipping-address__details-container>div>button {
+  margin-top: 2rem;
+  height: 3rem;
+  width: 9rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.order-details__cancel-btn {
+  margin-left: 2rem;
+}
+
+.edit-address-form__btn {
+  font-size: 2rem;
+  border: none;
+  background: none;
+  padding-top: 0.4rem;
+  cursor: pointer;
+}
+
+.edit-address-form__btn:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.edit-address-form__container {
+  width: 50rem;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.edit-address-form__container :is(input, textarea) {
+  width: 20rem;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+.edit-address-form__container textarea {
+  height: 6.2rem;
+}
+
+.edit-address-form__container>div:first-child {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.edit-address-form__left>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-address-form__right>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-address-form__btns {
+  margin-top: 2rem;
+}
+
+.edit-address-form__btns>button {
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin: 0 2rem;
+  width: 6rem;
+  height: 3rem;
+}
+
+.edit-address__error-msg {
+  color: red;
+  font-size: 1rem;
+}

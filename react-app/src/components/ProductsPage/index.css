@@ -1,0 +1,115 @@
+.main-products__page {
+  margin: 1rem;
+}
+
+.product__image__container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+}
+
+.product__image {
+  display: block;
+  width: 100%;
+  /* width: 20%; */
+  height: auto;
+  border-color: #fff;
+  /* box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca,
+        0 0 40px #0ba9ca, 0 0 50px #0ba9ca;
+    -webkit-animation: blink 0.7s infinite alternate;
+    animation: blink 0.7s infinite alternate; */
+}
+
+/* @-webkit-keyframes blink {
+    100% {
+        box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ba9ca,
+            0 0 70px #0ba9ca, 0 0 80px #0ba9ca;
+    }
+}
+
+@keyframes blink {
+    100% {
+        box-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ba9ca,
+            0 0 70px #0ba9ca, 0 0 80px #0ba9ca;
+    }
+} */
+
+.product__image__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: white;
+}
+
+.product__image__container:hover .product__image__overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+img .product__image__overlay {
+  /* color: white; */
+  /* font-size: 20px; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* text-align: center; */
+}
+
+.products__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-details__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: inherit;
+}
+
+.load-more__button {
+  width: 10rem;
+  height: 3rem;
+  margin: 2rem 0;
+}
+
+.load-more__button:hover {
+  cursor: pointer;
+}
+
+.load-more__button.hide {
+  display: none;
+}
+
+/* ----------------- */
+.add-to-cart__product-description {
+  font-style: italic;
+  width: 35rem;
+}
+
+.add-to-cart__button {
+  margin-top: 1rem;
+  width: 10rem;
+  height: 3rem;
+  font-size: 1.4rem;
+}
+
+.add-to-cart__header {
+  display: flex;
+  justify-content: space-between;
+  width: 30rem;
+}
+
+.add-to-cart__button {
+  cursor: pointer;
+}

@@ -1,0 +1,67 @@
+.order-history__container {
+    margin: 1rem;
+}
+
+.order-history__subcontainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid gray;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.order-history__details {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    cursor: pointer;
+    width: 65rem;
+    padding-left: 1rem;
+}
+
+.order-history__details:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+.order-history__details>div:first-child {
+    font-weight: 600;
+    text-decoration: underline;
+    margin-right: 5rem;
+}
+
+.order-history__details>div:not(:first-child) {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+.order-history__items {
+    width: 100%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.order-history__ordered-items-container {
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+    cursor: pointer;
+}
+
+.order-history__ordered-items-container:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+.order-history__ordered-items-container:not(:last-child) {
+    border-bottom: 0.1rem solid gray;
+}
+
+.order-history__ordered-items-container>div:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.ordered-items__qty-price {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+}

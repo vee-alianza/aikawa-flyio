@@ -1,0 +1,127 @@
+.navbar__container {
+    text-align: center;
+    min-width: 54rem;
+}
+
+.navbar__container.lift {
+    position: absolute;
+}
+
+p.lift {
+    color: white;
+}
+
+.navbar__logo.main__logo {
+    height: 10rem;
+}
+
+.navbar__container .navbar__logo.splash__page>img {
+    margin-top: -2rem;
+    margin-left: -32rem;
+    width: 25rem;
+}
+
+.navbar__left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar__right .navbar__icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 2rem;
+}
+
+.navbar__navigation {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 12rem;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+.navbar__navigation button {
+    border: none;
+    font-size: 1.4rem;
+}
+
+.navbar__navigation li {
+    float: left;
+}
+
+.navbar__navigation li button {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar__navigation li button:hover:not(.active) {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.navbar__navigation li button.active {
+    color: white;
+    background-color: purple;
+}
+
+.number-of-items {
+    position: absolute;
+    margin-left: -3rem;
+    margin-top: -0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    padding: 0.5rem;
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-of-items.over-100 {
+    margin-left: -3.8rem;
+}
+
+.number-of-items.below-10 {
+    margin-left: -3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.profile-dropdown__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 7rem;
+    height: 7rem;
+    margin-top: 1rem;
+    right: 0.1rem;
+    position: absolute;
+    z-index: 10;
+    background-color: #f3f3f3;
+}
+
+.profile-dropdown__container>div {
+    padding: 1rem;
+}
+
+.profile-dropdown__container>div:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+.profile-dropdown__container>div:not(:last-child) {
+    border-bottom: 0.1rem solid #666;
+}
+
+.profile-dropdown__container.hide {
+    display: none;
+}

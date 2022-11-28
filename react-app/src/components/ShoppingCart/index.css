@@ -1,0 +1,111 @@
+.shopping-cart__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.item__container {
+    display: flex;
+    align-items: center;
+    width: 45rem;
+    height: 10rem;
+    padding-right: 1rem;
+}
+
+.item__container:hover {
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+}
+
+.item__container>img {
+    width: 10rem;
+    height: 8rem;
+    margin-left: 1rem;
+}
+
+.item-quantity__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid gray;
+}
+
+.item-quantity__container>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 15rem;
+}
+
+.item-quantity__container>div:first-child>button {
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    height: 2.5rem;
+}
+
+.item-quantity__container>div:first-child>button:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.item-quantity__container>div:last-child {
+    font-weight: 700;
+}
+
+.item-details__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-details__container>div:first-child {
+    margin-left: 1rem;
+}
+
+.item-details__container>div:first-child>div {
+    font-style: italic;
+}
+
+.item-price__div {
+    font-weight: 500;
+}
+
+.checkout-details__container {
+    border-left: 0.1rem solid black;
+    padding-left: 3rem;
+    width: 25rem;
+}
+
+.order-total__container>div {
+    font-size: 1.3rem;
+}
+
+.order-total__container>h2 {
+    margin-top: 0.1rem;
+}
+
+.checkout-details__container>div:last-child {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-details__container>div:last-child>button {
+    height: 2rem;
+}
+
+.checkout-details__container>div:last-child>button:hover {
+    cursor: pointer;
+}
+
+.checkout-details__container span {
+    color: blue;
+    text-decoration: underline;
+}
+
+.checkout-details__container span:hover {
+    cursor: pointer;
+}

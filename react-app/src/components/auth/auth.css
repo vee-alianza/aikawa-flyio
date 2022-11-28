@@ -1,0 +1,374 @@
+.login__logo,
+.sign-up__logo {
+    margin: -2rem;
+}
+
+.login__wrapper,
+.sign-up__wrapper {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#00076f, #44008b);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: -1;
+}
+
+.login__container,
+.sign-up__container {
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.login__container h2,
+.sign-up__container h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+.login__container .login__details,
+.sign-up__container .sign-up__details {
+    position: relative;
+}
+
+.login__container .auth__form input,
+.sign-up__container .auth__form input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+:is(.login__container, .sign-up__container) input.no-errors {
+    margin-bottom: 30px;
+}
+
+.error__msg {
+    color: red;
+}
+
+.error__msg.login {
+    margin-bottom: 30px;
+}
+
+.error__msg.hide {
+    display: none;
+}
+
+/* .login__container .auth__form label,
+.sign-up__container .auth__form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login__container .auth__form input:focus+.input__label,
+.login__container .auth__form input:valid+.input__label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+} */
+
+/* ---------------------------------- */
+.navbar-logout__btn {
+    font-family: "Orbitron", sans-serif;
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+:is(#login__btn, .login__container form #demo__btn),
+.sign-up__container form #sign-up__btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: normal;
+    font-family: "Orbitron", sans-serif;
+}
+
+:is(#login__btn, .login__container #demo__btn):hover,
+.sign-up__container #sign-up__btn:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 1;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+:is(#login__btn, .login__container #demo__btn) span,
+.sign-up__container #sign-up__btn span {
+    position: absolute;
+    display: block;
+}
+
+:is(#login__btn, .login__container #demo__btn) span:nth-child(1),
+.sign-up__container #sign-up__btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+:is(#login__btn, .login__container #demo__btn) span:nth-child(2),
+.sign-up__container #sign-up__btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+:is(#login__btn, .login__container #demo__btn) span:nth-child(3),
+.sign-up__container #sign-up__btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login__details span:nth-child(4),
+.sign-up__details span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* .login__container .input__label input,
+.sign-up__container .input__label input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login__details .input__label label,
+.sign-up__details .input__label label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    cursor: pointer;
+} */
+/* --------------------------------------- */
+
+:is(#login__btn, #demo__btn) {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: normal;
+    font-family: "Orbitron", sans-serif;
+}
+
+:is(#login__btn, #demo__btn):hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    opacity: 1;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+:is(#login__btn, #demo__btn) span {
+    position: absolute;
+    display: block;
+}
+
+:is(#login__btn, #demo__btn) span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+:is(#login__btn, #demo__btn) span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+:is(#login__btn, #demo__btn) span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login__details span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.auth__link span {
+    /* padding-top: 20px; */
+    color: white;
+}
+
+.auth__link {
+    margin: auto;
+    margin-top: 10px;
+    font-size: 14px;
+}

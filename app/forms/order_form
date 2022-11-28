@@ -1,0 +1,6 @@
+# from flask_wtf import FlaskForm
+# from wtforms import IntegerField, StringField, DateField, FormField, SelectField
+# from wtforms.validators import DataRequired
+
+# class OrderForm(FlaskForm):
+#     status = SelectField('status', choices=[1, 2, 3], validators=[Input])

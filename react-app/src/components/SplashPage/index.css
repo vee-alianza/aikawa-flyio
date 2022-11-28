@@ -1,0 +1,74 @@
+.splashpage__container {
+    background: url("https://user-images.githubusercontent.com/92604480/174513101-65c69608-408e-41a2-9dfb-a5add8c8325d.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    min-width: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.splashpage__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.splash-btn__container {
+    margin-top: 8rem;
+    margin-right: 10rem;
+    align-self: flex-end;
+}
+
+.splash-btn__container>button,
+.splash-shopping__btn {
+    background: none;
+    color: white;
+    border: 0.2rem solid white;
+    margin: 0 1rem;
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
+}
+
+.splash-btn__container>button:hover,
+.splash-shopping__btn:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.267);
+}
+
+.splash__image-display-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.splash__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.splash__title>h1 {
+    font-size: 5rem;
+    color: hsl(288deg 99% 55%);
+    -webkit-text-stroke: 0.1rem black;
+}
+
+.splash__title>p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 0.05rem black;
+}
+
+.splash__image-display-3 {
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.splash-shopping__btn {
+    width: 15rem;
+    height: 5rem;
+}

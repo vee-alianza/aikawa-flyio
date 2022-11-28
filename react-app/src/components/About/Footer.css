@@ -1,0 +1,19 @@
+.footer__container {
+    color: white;
+}
+
+.footer__tech {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.footer__about {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
