@@ -1,36 +1,29 @@
-# Start with the python:3.9 image
+FROM node:16 AS build-stage
+
+WORKDIR /react-app
+ENV PATH react-app/node_modules/.bin:$PATH
+COPY react-app/. .
+
+# Build our React App
+RUN npm install
+RUN npm run build
+
 FROM python:3.9
-# Set the following enviroment variables
-#
-# REACT_APP_BASE_URL -> Your deployment URL
-ENV REACT_APP_BASE_URL=https://the-aikawa.herokuapp.com/
 
-# FLASK_APP -> entry point to your flask app
+# Setup Flask environment
 ENV FLASK_APP=app
-
-# FLASK_ENV -> Tell flask to use the production server
 ENV FLASK_ENV=production
-
-# SQLALCHEMY_ECHO -> Just set it to true
 ENV SQLALCHEMY_ECHO=True
 
-# Set the directory for upcoming commands to /var/www
+EXPOSE 8080
+
 WORKDIR /var/www
-
-# Copy all the files from your repo to the working directory
 COPY . .
+COPY --from=build-stage /react-app/build/* app/static/
 
-# Copy the built react app (it's built for us) from the
-# /react-app/build/ directory into your flasks app/static directory
-COPY /react-app/build/* app/static/
-
-# Run the next two python install commands with PIP
-# install -r requirements.txt
+# Install Python Dependencies
 RUN pip install -r requirements.txt
-
-# install psycopg2
 RUN pip install psycopg2
 
-# Start the flask environment by setting our
-# closing command to gunicorn app:app
-CMD gunicorn app:app
+# Run flask environment
+CMD ["gunicorn", "-b", ":8080", "app:app"]
