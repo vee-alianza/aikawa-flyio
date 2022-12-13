@@ -1,9 +1,9 @@
-<h1 align= "center" dir="auto"><a href="https://the-aikawa.herokuapp.com/">🪐🌠Aikawa🌠🪐</a></h1> <a name="top"> </a>
+<h1 align= "center" dir="auto"><a href="https://aikawa.fly.dev/">🪐🌠Aikawa🌠🪐</a></h1> <a name="top"> </a>
 <h5 align= "center" dir="auto">
   Created by:
       <a href="https://github.com/vee-alianza">Vee Alianza</a>
       </br>
-   <a href="https://the-aikawa.herokuapp.com/">» Live Link «</a>
+   <a href="https://aikawa.fly.dev/">» Live Link «</a>
 </h5>
 <h4 align= "center" dir="auto">
   <a href="https://github.com/vee-alianza/aikawa/wiki">» Explore the Wiki «</a>
