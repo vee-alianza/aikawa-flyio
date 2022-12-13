@@ -40,7 +40,7 @@ Aikawa is an e-commerce app inspired by [Ikea](https://www.ikea.com/), where use
 1. Clone this repository (only this branch)
 
    ```bash
-   git clone https://github.com/vee-alianza/aikawa.git
+   git clone https://github.com/vee-alianza/aikawa-flyio.git
    ```
 
 2. Install dependencies
